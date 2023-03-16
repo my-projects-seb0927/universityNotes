@@ -84,7 +84,7 @@ List-of-Int ::== ({Int}*)
 You can make *syntactic derivation* to show that a given data value is a member of a set. For example:
 ```
 List-of-Int
--> (Int . List-of-Int
+-> (Int . List-of-Int)
 -> (14 . List-of-Int)
 -> (14 . ())
 ```
@@ -106,7 +106,7 @@ We can use inductive definitions for:
 
 ## 1.2 Deriving Recursive Programs
 Recursive procedures rely on an important principle:
-> **The Smaller-Subproblem Principle:** *If we can reduce a problem to a smaller subproblem, we can call the procedure that solves the problem to solve the problem
+> **The Smaller-Subproblem Principle:** *If we can reduce a problem to a smaller subproblem, we can call the procedure that solves the problem to solve the problem.*
 
 ### 1.2.1 list-length
 > Watch it in the book
@@ -114,8 +114,11 @@ Recursive procedures rely on an important principle:
 ### 1.2.2 nth-element
 > Watch it in the book
 
-### 1.2.3 remove-firs
+### 1.2.3 remove-first
 > Watch it in the book
 
 ### 1.2.4 occurs-free?
 > Watch it in the book
+
+## 1.3 Auxiliary Procedures and Context Arguments
+> Basically. This is a chapter talking about how to make auxiliary procedures
