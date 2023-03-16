@@ -53,10 +53,10 @@ You can write it also like this:
 1. $0 ∈ S$ and
 2. $if n ∈ S$, then $n+3 ∈S$
 
-And you can write it like this (rules-of-interference):
+And you can write it like this (rules-of-interference):  
 ![Third way of writing definition](https://user-images.githubusercontent.com/83418390/225482398-6d4af9c6-7f6a-4300-a8fa-54b2eeec5d9f.png)  
 It can be read as "If this then that".
-This is another example using the same methods:
+This is another example using the same methods:  
 ![Another example](https://user-images.githubusercontent.com/83418390/225483035-0e87da42-8d24-423d-a71d-b32c542b3897.png)  
 So, `(), (3 . ()), (-7 . (3 . ()))`, and so on are lists
 
