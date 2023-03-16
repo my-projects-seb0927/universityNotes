@@ -30,4 +30,4 @@
 We need to know for a procedure what arguments receives and what kind of values return.
 
 ### 1.1.1. Inductive Specification
-It's a method for specifying a set of values, *for example: * $\(N = {0, 1, 2, ...})
+It's a method for specifying a set of values, *for example: * $\N = {0, 1, 2, ...}$
