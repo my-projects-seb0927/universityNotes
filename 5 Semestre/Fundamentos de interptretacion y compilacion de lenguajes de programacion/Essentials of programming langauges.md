@@ -81,3 +81,20 @@ List-of-Int ::== ({Int}*)
 - **Terminal Symbols:** Characters in the external representation: `., ( and )`
 - **Productions:** They are the rules. Each production has a left-hand side, which is a nonterminal symbol, and a right-hand side, which consists of terminal and nonterminal symbols. They are separated by `::==`, read *is* or *can be*.
 
+You can make *syntactic derivation* to show that a given data value is a member of a set. For example:
+```
+List-of-Int
+-> (Int . List-of-Int
+-> (14 . List-of-Int)
+-> (14 . ())
+```
+
+> In the book, You'll find how to do a symbol manipulation procedure and a binary tree
+**Definition 1.1.8 (lambda expression)**
+```
+LcExp ::== Identifier
+      ::== (lambda (Identifier) LcExp)
+      ::== (LcExp LcExp)
+```
+*where an identifier is any symbol other than* `lambda`
+The identifier in the second production is called the *bound variable* of the expression.
