@@ -66,3 +66,18 @@ Describing data with the last section is cumbersome. You can use **grammars** Th
 List-of-Int ::== ()
 List-of-Int ::== (Int . List-of-Int)
 ```
+```
+List-of-Int ::== ()
+            ::== (Int . List-of-Int)
+```
+```
+List-of-Int ::== () | (Int . List-of-Int)
+```
+```
+//It's indicating a sequence of 0 or more Integers.
+List-of-Int ::== ({Int}*)
+```
+- **Nonterminal Symbols:** It's the names of the sets being defined. Nonterminal Symbols and sets have names that are capitalized.
+- **Terminal Symbols:** Characters in the external representation: `., ( and )`
+- **Productions:** They are the rules. Each production has a left-hand side, which is a nonterminal symbol, and a right-hand side, which consists of terminal and nonterminal symbols. They are separated by `::==`, read *is* or *can be*.
+
