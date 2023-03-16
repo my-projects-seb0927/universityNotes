@@ -98,3 +98,24 @@ LcExp ::== Identifier
 ```
 *where an identifier is any symbol other than* `lambda`
 The identifier in the second production is called the *bound variable* of the expression.
+
+### 1.1.3. Induction
+We can use inductive definitions for:
+- Proving theorems about members of the set
+- Writing programs that manipulate them.
+
+## 1.2 Deriving Recursive Programs
+Recursive procedures rely on an important principle:
+> **The Smaller-Subproblem Principle:** *If we can reduce a problem to a smaller subproblem, we can call the procedure that solves the problem to solve the problem
+
+### 1.2.1 list-length
+> Watch it in the book
+
+### 1.2.2 nth-element
+> Watch it in the book
+
+### 1.2.3 remove-firs
+> Watch it in the book
+
+### 1.2.4 occurs-free?
+> Watch it in the book
