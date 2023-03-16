@@ -61,4 +61,8 @@ This is another example using the same methods:
 So, `(), (3 . ()), (-7 . (3 . ()))`, and so on are lists
 
 ### 1.1.2 Defining Sets using Grammars
-
+Describing data with the last section is cumbersome. You can use **grammars** They can be used for defining sets of values. Like for example:
+```
+List-of-Int ::== ()
+List-of-Int ::== (Int . List-of-Int)
+```
