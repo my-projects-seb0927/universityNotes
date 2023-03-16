@@ -30,4 +30,29 @@
 We need to know for a procedure what arguments receives and what kind of values return.
 
 ### 1.1.1. Inductive Specification
-It's a method for specifying a set of values, *for example:* $N = \\\{0, 1, 2, ...\\\}$
+It's a method for specifying a set of values, *for example:* $N = \\\{0, 1, 2, ...\\\}$ or like this:
+**Definition 1.1.1 (top-down)** *A natural number n is in S if and only if*
+1. $n = 0$, or
+2. $n - 3 ∈ S$
+
+In that definition, 0, 3, 6 make part of $S$. That can be written in the next way:
+```
+in-S? : N → Bool
+usage: (in-S? n) = #t if n is in S, #f otherwise
+(define in-S?
+  (lambda (n)
+    (if (zero? n) #t
+      (if (>= (- n 3) 0)
+         (in-S? (- n 3))
+          #f))))
+```
+The last piece of code is **recursive**. You can understand how it works ;)
+
+You can write it also like this:
+**Definition 1.1.2 (bottom-up)** *Define the set S to be the smallest set contained in N and satisfying the following two properties:**
+1. $0 ∈ S$ and
+2. $if n ∈ S$, then $n+3 ∈S
+
+And you can write it like this (rules-of-interference):
+![Third way of writing definition](https://user-images.githubusercontent.com/83418390/225482398-6d4af9c6-7f6a-4300-a8fa-54b2eeec5d9f.png)
+Tt can be read as "If this then that".
